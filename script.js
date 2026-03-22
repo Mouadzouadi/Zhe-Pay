@@ -85,6 +85,32 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // --- Touch swipe on hero services stack ---
+    const stackContainer = document.getElementById('heroServicesStack');
+    if (stackContainer) {
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        stackContainer.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        stackContainer.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            const diff = touchStartX - touchEndX;
+            if (Math.abs(diff) > 40) {
+                clearInterval(stackInterval);
+                if (diff > 0) {
+                    currentIndex = (currentIndex + 1) % totalItems;
+                } else {
+                    currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+                }
+                updateStack();
+                startStackInterval();
+            }
+        }, { passive: true });
+    }
+
     // --- Animated counter ---
     const counters = document.querySelectorAll('.stat-number[data-target]');
     let countersAnimated = false;
