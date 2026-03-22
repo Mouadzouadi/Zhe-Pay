@@ -363,7 +363,7 @@ ul { list-style: none; }
     box-shadow: var(--shadow-md);
     border: 1px solid rgba(0,0,0,0.06);
     opacity: 0;
-    transform: scale(0.85) translateY(30px);
+    transform: scale(0.85) translateX(60px);
     transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
     pointer-events: none;
     z-index: 0;
@@ -443,26 +443,26 @@ ul { list-style: none; }
 
 .hero-service-item.active {
     opacity: 1;
-    transform: scale(1) translateY(0);
+    transform: scale(1) translateX(0);
     z-index: 4;
     pointer-events: auto;
 }
 
 .hero-service-item.behind-1 {
     opacity: 0.6;
-    transform: scale(0.93) translateY(24px);
+    transform: scale(0.93) translateX(28px);
     z-index: 3;
 }
 
 .hero-service-item.behind-2 {
     opacity: 0.3;
-    transform: scale(0.86) translateY(48px);
+    transform: scale(0.86) translateX(56px);
     z-index: 2;
 }
 
 .hero-service-item.exiting {
     opacity: 0;
-    transform: scale(1.05) translateY(-30px);
+    transform: scale(1.05) translateX(-60px);
     z-index: 5;
 }
 
