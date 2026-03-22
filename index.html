@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhe Pay — Gestion de Paie & SIRH pour les entreprises</title>
+    <meta name="description" content="Zhe Pay, votre partenaire B2B en gestion de paie et SIRH. Externalisation paie, bulletins de salaire, contrats de travail, DPAE et plus encore.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="Zhe Pay" class="logo-img">
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#fiche-paie">Exemple fiche</a></li>
+                <li><a href="#avis">Avis clients</a></li>
+                <li><a href="#contact" class="btn btn-nav">Devis gratuit</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="accueil">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="badge">Expert Paie & SIRH — B2B</span>
+                <h1>Votre paie, <span class="gradient-text">simplifiée.</span></h1>
+                <p class="hero-subtitle">Zhe Pay accompagne les entreprises dans la gestion complète de leur paie et de leurs ressources humaines. Un suivi personnalisé, une expertise reconnue.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary btn-lg">Demander un devis gratuit</a>
+                    <a href="#services" class="btn btn-outline btn-lg">Découvrir nos services</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="6">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Grandes entreprises</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+                        <span class="stat-label">Clients satisfaits</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Services proposés</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-services-stack" id="heroServicesStack">
+                    <div class="hero-service-item active" data-index="0" data-color="#2B3E56">
+                        <div class="hero-service-topbar"></div>
+                        <div class="hero-service-head">
+                            <div class="hero-service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                            </div>
+                            <span class="hero-service-tag">Paie</span>
+                        </div>
+                        <h3>Bulletins de salaire</h3>
+                        <p>Établissement et édition de bulletins de paie conformes à la législation en vigueur.</p>
+                        <ul class="hero-service-features">
+                            <li>Gestion des variables et primes</li>
+                            <li>Cotisations sociales à jour</li>
+                            <li>Livraison dans les délais</li>
+                        </ul>
+                    </div>
+                    <div class="hero-service-item" data-index="1" data-color="#3a5472">
+                        <div class="hero-service-topbar"></div>
+                        <div class="hero-service-head">
+                            <div class="hero-service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>
+                            </div>
+                            <span class="hero-service-tag">Juridique</span>
+                        </div>
+                        <h3>Contrats de travail</h3>
+                        <p>Rédaction de contrats sur mesure, conformes au droit du travail français.</p>
+                        <ul class="hero-service-features">
+                            <li>CDI, CDD, alternance, temps partiel</li>
+                            <li>Clauses personnalisées</li>
+                            <li>Conformité légale garantie</li>
+                        </ul>
+                    </div>
+                    <div class="hero-service-item" data-index="2" data-color="#4a7c9b">
+                        <div class="hero-service-topbar"></div>
+                        <div class="hero-service-head">
+                            <div class="hero-service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                            </div>
+                            <span class="hero-service-tag">SIRH</span>
+                        </div>
+                        <h3>Implémentation outils paie</h3>
+                        <p>Installation et configuration de vos logiciels de gestion de paie.</p>
+                        <ul class="hero-service-features">
+                            <li>Silae, Sage, ADP, PayFit…</li>
+                            <li>Formation de vos équipes</li>
+                            <li>Migration des données</li>
+                        </ul>
+                    </div>
+                    <div class="hero-service-item" data-index="3" data-color="#567a4a">
+                        <div class="hero-service-topbar"></div>
+                        <div class="hero-service-head">
+                            <div class="hero-service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                            </div>
+                            <span class="hero-service-tag">Création</span>
+                        </div>
+                        <h3>Création d'entreprise</h3>
+                        <p>Accompagnement complet pour lancer votre structure en toute sérénité.</p>
+                        <ul class="hero-service-features">
+                            <li>Formalités administratives</li>
+                            <li>Immatriculation &amp; déclarations</li>
+                            <li>Paramétrage initial paie</li>
+                        </ul>
+                    </div>
+                    <div class="hero-service-item" data-index="4" data-color="#6b5b8a">
+                        <div class="hero-service-topbar"></div>
+                        <div class="hero-service-head">
+                            <div class="hero-service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+                            </div>
+                            <span class="hero-service-tag">Embauche</span>
+                        </div>
+                        <h3>DPAE</h3>
+                        <p>Déclaration Préalable À l'Embauche pour chaque nouveau collaborateur.</p>
+                        <ul class="hero-service-features">
+                            <li>Formalités obligatoires</li>
+                            <li>Transmission URSSAF</li>
+                            <li>Suivi et archivage</li>
+                        </ul>
+                    </div>
+                    <div class="hero-service-item" data-index="5" data-color="#8a6b5b">
+                        <div class="hero-service-topbar"></div>
+                        <div class="hero-service-head">
+                            <div class="hero-service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                            </div>
+                            <span class="hero-service-tag">Négociation</span>
+                        </div>
+                        <h3>Rupture conventionnelle</h3>
+                        <p>Accompagnement dans toute la procédure de rupture amiable.</p>
+                        <ul class="hero-service-features">
+                            <li>Calcul des indemnités</li>
+                            <li>Rédaction de la convention</li>
+                            <li>Homologation DREETS</li>
+                        </ul>
+                    </div>
+                    <div class="hero-service-item" data-index="6" data-color="#5b7a8a">
+                        <div class="hero-service-topbar"></div>
+                        <div class="hero-service-head">
+                            <div class="hero-service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+                            </div>
+                            <span class="hero-service-tag">Sortie</span>
+                        </div>
+                        <h3>Contrat de sortie</h3>
+                        <p>Gestion complète de la fin de contrat dans les règles de l'art.</p>
+                        <ul class="hero-service-features">
+                            <li>Solde de tout compte</li>
+                            <li>Attestation France Travail</li>
+                            <li>Certificat de travail</li>
+                        </ul>
+                    </div>
+                    <div class="hero-service-item" data-index="7" data-color="#8a5b6b">
+                        <div class="hero-service-topbar"></div>
+                        <div class="hero-service-head">
+                            <div class="hero-service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <span class="hero-service-tag">Discipline</span>
+                        </div>
+                        <h3>Procédure disciplinaire</h3>
+                        <p>Conseil et rédaction de tous les actes de procédure disciplinaire.</p>
+                        <ul class="hero-service-features">
+                            <li>Avertissements &amp; mises à pied</li>
+                            <li>Convocations &amp; entretiens</li>
+                            <li>Licenciement pour faute</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hero-service-dots" id="heroServiceDots">
+                    <button class="hero-dot active" data-dot="0" aria-label="Service 1"></button>
+                    <button class="hero-dot" data-dot="1" aria-label="Service 2"></button>
+                    <button class="hero-dot" data-dot="2" aria-label="Service 3"></button>
+                    <button class="hero-dot" data-dot="3" aria-label="Service 4"></button>
+                    <button class="hero-dot" data-dot="4" aria-label="Service 5"></button>
+                    <button class="hero-dot" data-dot="5" aria-label="Service 6"></button>
+                    <button class="hero-dot" data-dot="6" aria-label="Service 7"></button>
+                    <button class="hero-dot" data-dot="7" aria-label="Service 8"></button>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Défiler</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- PRÉSENTATION RAPIDE -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="intro-card">
+                    <div class="intro-icon">⚡</div>
+                    <h3>Rapidité</h3>
+                    <p>Prise en charge rapide de vos dossiers. Vos bulletins de paie prêts dans les délais.</p>
+                </div>
+                <div class="intro-card">
+                    <div class="intro-icon">🎯</div>
+                    <h3>Précision</h3>
+                    <p>Zéro erreur tolérée. Chaque bulletin est vérifié et conforme à la législation en vigueur.</p>
+                </div>
+                <div class="intro-card">
+                    <div class="intro-icon">🤝</div>
+                    <h3>Suivi personnalisé</h3>
+                    <p>Un interlocuteur unique dédié à votre entreprise pour un accompagnement sur mesure.</p>
+                </div>
+                <div class="intro-card">
+                    <div class="intro-icon">🔒</div>
+                    <h3>Confidentialité</h3>
+                    <p>Vos données sont protégées. Conformité RGPD et sécurité maximale garanties.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nos services</span>
+                <h2>Tout ce dont votre entreprise a besoin</h2>
+                <p class="section-desc">De la création d'entreprise à la gestion quotidienne de la paie, Zhe Pay vous accompagne à chaque étape.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>Implémentation outils paie</h3>
+                    <p>Mise en place et configuration de vos logiciels de paie (Silae, Sage, ADP…). Formation de vos équipes incluse.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </div>
+                    <h3>Création d'entreprise</h3>
+                    <p>Accompagnement complet pour la création de votre structure : formalités, immatriculation, paramétrage initial.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    </div>
+                    <h3>Bulletins de salaire</h3>
+                    <p>Établissement et édition de bulletins de paie conformes. Gestion des variables, primes, absences et cotisations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>
+                    </div>
+                    <h3>Contrats de travail</h3>
+                    <p>Rédaction de contrats de travail sur mesure : CDI, CDD, alternance, temps partiel… conformes au droit du travail.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+                    </div>
+                    <h3>DPAE</h3>
+                    <p>Déclaration Préalable À l'Embauche pour chaque nouveau salarié. Formalités obligatoires prises en charge.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+                    </div>
+                    <h3>Contrat de sortie</h3>
+                    <p>Gestion complète des fins de contrat : solde de tout compte, attestation Pôle Emploi, certificat de travail.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                    </div>
+                    <h3>Rupture conventionnelle</h3>
+                    <p>Accompagnement dans la procédure de rupture conventionnelle : négociation, formalisation, homologation DREETS.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Procédure disciplinaire</h3>
+                    <p>Conseil et rédaction : avertissements, mises à pied, convocations, entretiens préalables, licenciements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section class="about" id="a-propos">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-image-placeholder">
+                        <img src="img/chafiq.jpg" alt="Chafiq Zouadi — Fondateur de Zhe Pay" class="about-photo">
+                        <div class="about-badge-card">
+                            <span class="about-badge-title">Master RH & SIRH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-tag">À propos</span>
+                    <h2>Chafiq Zouadi</h2>
+                    <p class="about-role">Fondateur de Zhe Pay — Expert Paie & SIRH</p>
+                    <p>Titulaire d'un <strong>Master en Ressources Humaines et SIRH</strong>, j'ai forgé mon expertise au sein de grandes entreprises et groupes internationaux. Cette expérience me permet aujourd'hui d'offrir un service de qualité premium aux TPE, PME et startups.</p>
+                    <p>Mon objectif : vous libérer des contraintes administratives pour que vous puissiez vous concentrer sur votre cœur de métier.</p>
+                    <div class="experience-logos">
+                        <h4>Expériences en entreprise</h4>
+                        <div class="logos-grid">
+                            <div class="logo-item">ADP</div>
+                            <div class="logo-item">Hutchinson</div>
+                            <div class="logo-item">MGEN</div>
+                            <div class="logo-item">Villeroy &amp; Boch</div>
+                            <div class="logo-item">Ideal Standard</div>
+                            <div class="logo-item">Mango</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FICHE DE PAIE EXEMPLE -->
+    <section class="payslip-section" id="fiche-paie">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Exemple</span>
+                <h2>Fiche de paie — Aperçu</h2>
+                <p class="section-desc">Voici un exemple fictif de bulletin de salaire tel que nous le produisons pour nos clients.</p>
+            </div>
+            <div class="payslip-pdf-wrapper">
+                <iframe src="img/modele-bulletin-de-salaire.pdf" title="Exemple de fiche de paie — Zhe Pay"></iframe>
+                <div class="payslip-pdf-fallback">
+                    <p>Si le PDF ne s'affiche pas, vous pouvez le télécharger directement :</p>
+                    <a href="img/modele-bulletin-de-salaire.pdf" target="_blank" class="btn btn-primary">Télécharger l'exemple de fiche de paie</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AVIS CLIENTS -->
+    <section class="testimonials" id="avis">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Témoignages</span>
+                <h2>Ils nous font confiance</h2>
+                <p class="section-desc">Découvrez les retours de nos clients sur notre accompagnement en gestion de paie.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Zhe Pay a complètement transformé notre gestion de paie. Plus aucune erreur, tout est livré dans les temps. Un vrai soulagement pour notre équipe !"</p>
+                    <div class="testimonial-author">
+                        <img src="img/am_events.png" alt="AM Events" class="testimonial-avatar-img">
+                        <div>
+                            <strong>AM Events</strong>
+                            <span>Événementiel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Service réactif et professionnel. Chafiq comprend nos besoins et s'adapte à notre rythme. Je recommande à 100% pour toute entreprise de restauration."</p>
+                    <div class="testimonial-author">
+                        <img src="img/poulet_braise.jpg" alt="Poulet Braisés" class="testimonial-avatar-img">
+                        <div>
+                            <strong>Poulet Braisés</strong>
+                            <span>Restauration</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"La mise en place de notre outil paie a été fluide et rapide. Zhe Pay nous a accompagnés de A à Z avec un professionnalisme exemplaire."</p>
+                    <div class="testimonial-author">
+                        <img src="img/allfret_logo.jpg" alt="All Fret" class="testimonial-avatar-img">
+                        <div>
+                            <strong>All Fret</strong>
+                            <span>Transport & Logistique</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Excellent suivi personnalisé. Nos contrats, fiches de paie et DPAE sont gérés avec rigueur. On ne pourrait plus s'en passer !"</p>
+                    <div class="testimonial-author">
+                        <img src="img/crousty_game.jpg" alt="Crousty Game" class="testimonial-avatar-img">
+                        <div>
+                            <strong>Crousty Game</strong>
+                            <span>Restauration</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Nous avions besoin d'un expert fiable pour nos procédures RH. Zhe Pay a répondu à toutes nos attentes avec une grande réactivité."</p>
+                    <div class="testimonial-author">
+                        <img src="img/maitres lunetiers.jpg" alt="Maîtres Lunetiers" class="testimonial-avatar-img">
+                        <div>
+                            <strong>Maîtres Lunetiers</strong>
+                            <span>Optique</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT / DEVIS -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">Contact</span>
+                    <h2>Demandez votre devis gratuit</h2>
+                    <p>Vous souhaitez externaliser votre paie ou avez besoin d'un accompagnement RH ? Remplissez le formulaire et recevez un devis personnalisé sous 24h.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <strong>Email</strong>
+                                <p>contact@zhepay.fr</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <strong>Téléphone</strong>
+                                <p>01 23 45 67 89</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <strong>Localisation</strong>
+                                <p>Île-de-France, France</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-guarantee">
+                        <div class="guarantee-icon">✅</div>
+                        <p><strong>Devis 100% gratuit</strong> — Sans engagement. Réponse sous 24h ouvrées.</p>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xwvrjdpq" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nom">Nom *</label>
+                                <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+                            </div>
+                            <div class="form-group">
+                                <label for="prenom">Prénom *</label>
+                                <input type="text" id="prenom" name="prenom" required placeholder="Votre prénom">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="entreprise">Nom de l'entreprise *</label>
+                            <input type="text" id="entreprise" name="entreprise" required placeholder="Votre entreprise">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="vous@entreprise.fr">
+                            </div>
+                            <div class="form-group">
+                                <label for="telephone">Téléphone</label>
+                                <input type="tel" id="telephone" name="telephone" placeholder="06 12 34 56 78">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service souhaité</label>
+                            <select id="service" name="service">
+                                <option value="">— Sélectionnez un service —</option>
+                                <option value="bulletins">Bulletins de salaire</option>
+                                <option value="contrats">Contrats de travail</option>
+                                <option value="creation">Création d'entreprise</option>
+                                <option value="implementation">Implémentation outil paie</option>
+                                <option value="dpae">DPAE</option>
+                                <option value="sortie">Contrat de sortie</option>
+                                <option value="rupture">Rupture conventionnelle</option>
+                                <option value="disciplinaire">Procédure disciplinaire</option>
+                                <option value="complet">Pack complet</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="effectif">Nombre de salariés</label>
+                            <select id="effectif" name="effectif">
+                                <option value="">— Sélectionnez —</option>
+                                <option value="1-5">1 à 5</option>
+                                <option value="6-20">6 à 20</option>
+                                <option value="21-50">21 à 50</option>
+                                <option value="51-100">51 à 100</option>
+                                <option value="100+">Plus de 100</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Décrivez votre besoin..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-full">Envoyer ma demande de devis</button>
+                    </form>
+                    <div class="form-success" id="formSuccess" style="display:none;">
+                        <div class="success-icon">🎉</div>
+                        <h3>Demande envoyée !</h3>
+                        <p>Merci pour votre demande. Nous vous recontacterons sous 24h avec un devis personnalisé.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="img/logo.png" alt="Zhe Pay" class="logo-img">
+                    </a>
+                    <p>Votre partenaire de confiance pour la gestion de paie et le SIRH. Expertise, rigueur et proximité au service de votre entreprise.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#a-propos">À propos</a></li>
+                        <li><a href="#fiche-paie">Exemple fiche</a></li>
+                        <li><a href="#avis">Avis clients</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Bulletins de salaire</a></li>
+                        <li><a href="#services">Contrats de travail</a></li>
+                        <li><a href="#services">DPAE</a></li>
+                        <li><a href="#services">Rupture conventionnelle</a></li>
+                        <li><a href="#services">Création d'entreprise</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>contact@zhepay.fr</li>
+                        <li>01 23 45 67 89</li>
+                        <li>Île-de-France</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Zhe Pay — Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
