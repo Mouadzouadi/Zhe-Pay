@@ -2,8 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://zhepay.fr/</loc>
-        <lastmod>2025-01-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://zhepay.fr/smic-decembre-2026.html</loc>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://zhepay.fr/plafond-securite-sociale-2027.html</loc>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://zhepay.fr/plfss-2027-paie.html</loc>
+        <lastmod>2026-11-10</lastmod>
     </url>
 </urlset>
