@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow:
 
-Sitemap: https://zhepay.fr/sitemap.xml
+Sitemap: https://mouadzouadi.github.io/Zhe-Pay/sitemap.xml
